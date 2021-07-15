@@ -1,0 +1,569 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+  --font-family: "Josefin Sans";
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+.joint-background {
+  background-image: url(image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  height: 40rem;
+}
+.joint-background .navbar {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.joint-background .navbar button {
+  margin-right: 9px;
+}
+.joint-background .navbar .navbar-brand {
+  font-size: 1.7rem;
+  margin-left: 15px;
+}
+.joint-background .navbar .nav-item {
+  color: var(--White);
+  padding: 15px;
+}
+.joint-background .navbar-nav {
+  background-color: var(--Black);
+  text-align: center;
+}
+.joint-background .intr0duction-text {
+  display: block;
+  color: var(--White);
+  border: 2px solid var(--Dark-Gray);
+  border-right: 2px solid var(--White);
+  margin-top: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 30px;
+}
+
+.section-one {
+  margin-top: 50px;
+}
+.section-one .section-one-image {
+  display: block;
+}
+.section-one .section-one-image img {
+  width: 90%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.section-one .section-one-text h1 {
+  font-size: 1.9rem;
+  font-family: var(--font-family);
+  text-align: center;
+  margin: 20px 20px;
+  font-weight: 400;
+}
+.section-one .section-one-text h5 {
+  font-family: Alata;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 55px;
+  margin-right: 55px;
+  text-align: center;
+  color: var(--Dark-Gray);
+}
+
+.section-two {
+  margin-top: 90px;
+}
+.section-two h1 {
+  font-size: 2.5rem;
+  font-family: var(--font-family);
+  font-weight: lighter;
+  text-align: center;
+  margin: 20px 20px;
+  margin-bottom: 40px;
+}
+.section-two .section-two-images img {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 1px;
+  margin-right: 0;
+}
+.section-two .section-two-images h5 {
+  margin-top: -90px;
+  margin-left: 20px;
+  background-color: var(--Very-Dark-Gray);
+  color: var(--White);
+  font-family: var(--font-family);
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+.section-two .section-two-images .spacing {
+  margin-top: 40px;
+}
+.section-two h6 {
+  font-family: var(--font-family);
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid var(--Black);
+}
+.section-two h6:hover {
+  background-color: var(--Dark-Gray);
+}
+
+.footer {
+  background-color: var(--Black);
+  color: var(--White);
+  margin-top: 100px;
+}
+.footer h1 {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-family: Alata;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.footer ul li {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: Alata;
+}
+.footer ul li:hover {
+  background-color: var(--Dark-Gray);
+}
+.footer .social {
+  text-align: center;
+  margin-top: 25px;
+}
+.footer .social img {
+  margin-right: 10px;
+}
+.footer .social img:hover {
+  background-color: var(--Very-Dark-Gray);
+}
+.footer h5 {
+  margin-top: 20px;
+  padding-bottom: 60px;
+  font-family: var(--font-family);
+  text-align: center;
+  color: var(--Dark-Gray);
+  font-size: 1rem;
+}
+
+.desktop-view {
+  display: none;
+}
+
+.section-two-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  .joint-background .intr0duction-text {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .joint-background .intr0duction-text {
+    margin-left: 20px;
+    margin-right: 80px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .section-two {
+    display: none;
+  }
+
+  .desktop-view,
+.section-two-desktop {
+    display: contents;
+  }
+
+  .joint-background {
+    background-image: url(image-hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    height: 40rem;
+  }
+  .joint-background .navbar {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .joint-background .navbar .navbar-brand {
+    font-size: 1.7rem;
+    margin-left: 190px;
+    font-family: Alata;
+  }
+  .joint-background .navbar .nav-item {
+    color: var(--White);
+    padding: 15px;
+  }
+  .joint-background .navbar .nav-item:nth-child(5) {
+    margin-right: 100px;
+  }
+  .joint-background .navbar-nav {
+    background-color: transparent;
+    text-align: center;
+  }
+  .joint-background .intr0duction-text {
+    display: block;
+    color: var(--White);
+    border: 2px solid var(--Dark-Gray);
+    border-right: 2px solid var(--White);
+    margin-top: 150px;
+    margin-left: 200px;
+    margin-right: 20px;
+    padding: 30px;
+    width: 30%;
+    font-family: var(--font-family);
+  }
+
+  .section-one {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  .section-one .section-one-image {
+    display: block;
+    margin-left: 150px;
+  }
+  .section-one .section-one-image img {
+    width: 100%;
+    margin-left: 150px;
+    margin-right: 20px;
+    height: 15rem;
+  }
+  .section-one .section-one-text {
+    display: block;
+    margin-top: 0;
+    margin-left: 150px;
+    background: var(--White);
+  }
+  .section-one .section-one-text h1 {
+    font-size: 1.9rem;
+    font-family: var(--font-family);
+    text-align: left;
+    margin: 20px 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-weight: 400;
+  }
+  .section-one .section-one-text h5 {
+    font-family: Alata;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 55px;
+    margin-right: 55px;
+    text-align: left;
+    color: var(--Dark-Gray);
+    width: 55%;
+  }
+
+  .section-two-desktop .row {
+    margin-left: 150px;
+    margin-bottom: 0;
+  }
+  .section-two-desktop .row h1 {
+    font-size: 2.5rem;
+    font-family: var(--font-family);
+    font-weight: lighter;
+    text-align: center;
+  }
+  .section-two-desktop .row h6 {
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 190px;
+    border: 2px solid var(--Black);
+    padding: 5px;
+    padding-top: 7px;
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .section-two-desktop .row h6:hover {
+    background-color: var(--Dark-Gray);
+  }
+  .section-two-desktop .section-two-images .row {
+    margin-right: 50px;
+  }
+  .section-two-desktop .section-two-images img {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 1px;
+    margin-right: 0;
+  }
+  .section-two-desktop .section-two-images h5 {
+    margin-top: -90px;
+    margin-left: 20px;
+    background-color: var(--Very-Dark-Gray);
+    color: var(--White);
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 1.5rem;
+    width: 70%;
+  }
+  .section-two-desktop .section-two-images .spacing {
+    margin-top: 40px;
+  }
+
+  .footer {
+    background-color: var(--Black);
+    color: var(--White);
+    margin-top: 100px;
+  }
+  .footer .first-col {
+    margin-left: 150px;
+  }
+  .footer .first-col h1 {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: left;
+    font-family: Alata;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  .footer .first-col ul li {
+    display: inline;
+    text-align: left;
+    margin-bottom: 15px;
+    font-family: Alata;
+    margin-right: 30px;
+  }
+  .footer .first-col ul li:hover {
+    background-color: var(--Dark-Gray);
+  }
+  .footer .second-col .social {
+    text-align: end;
+    margin-top: 60px;
+  }
+  .footer .second-col .social img {
+    margin-right: 10px;
+  }
+  .footer .second-col .social img:hover {
+    background-color: var(--Very-Dark-Gray);
+  }
+  .footer .second-col h5 {
+    margin-top: 40px;
+    padding-bottom: 60px;
+    font-family: var(--font-family);
+    text-align: end;
+    color: var(--Dark-Gray);
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-two {
+    display: none;
+  }
+
+  .desktop-view,
+.section-two-desktop {
+    display: contents;
+  }
+
+  .joint-background {
+    background-image: url(image-hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    height: 40rem;
+  }
+  .joint-background .navbar {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .joint-background .navbar .navbar-brand {
+    font-size: 1.7rem;
+    margin-left: 190px;
+    font-family: Alata;
+  }
+  .joint-background .navbar .nav-item {
+    color: var(--White);
+    padding: 15px;
+  }
+  .joint-background .navbar .nav-item:nth-child(5) {
+    margin-right: 100px;
+  }
+  .joint-background .navbar-nav {
+    background-color: transparent;
+    text-align: center;
+  }
+  .joint-background .intr0duction-text {
+    display: block;
+    color: var(--White);
+    border: 2px solid var(--Dark-Gray);
+    border-right: 2px solid var(--White);
+    margin-top: 150px;
+    margin-left: 200px;
+    margin-right: 20px;
+    padding: 30px;
+    width: 30%;
+    font-family: var(--font-family);
+  }
+
+  .section-one {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  .section-one .section-one-image {
+    display: block;
+    margin-left: 150px;
+  }
+  .section-one .section-one-image img {
+    width: 90%;
+    margin-left: 200px;
+    margin-right: 20px;
+  }
+  .section-one .section-one-text {
+    display: block;
+    margin-top: 60px;
+    margin-left: 90px;
+    background: var(--White);
+  }
+  .section-one .section-one-text h1 {
+    font-size: 1.9rem;
+    font-family: var(--font-family);
+    text-align: left;
+    margin: 20px 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-weight: 400;
+  }
+  .section-one .section-one-text h5 {
+    font-family: Alata;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: 55px;
+    margin-right: 55px;
+    text-align: left;
+    color: var(--Dark-Gray);
+    width: 55%;
+  }
+
+  .section-two-desktop .row {
+    margin-left: 150px;
+    margin-bottom: 0;
+  }
+  .section-two-desktop .row h1 {
+    font-size: 2.5rem;
+    font-family: var(--font-family);
+    font-weight: lighter;
+    text-align: center;
+  }
+  .section-two-desktop .row h6 {
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 190px;
+    border: 2px solid var(--Black);
+    padding: 5px;
+    padding-top: 7px;
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .section-two-desktop .row h6:hover {
+    background-color: var(--Dark-Gray);
+  }
+  .section-two-desktop .section-two-images .row {
+    margin-right: 50px;
+  }
+  .section-two-desktop .section-two-images img {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 1px;
+    margin-right: 0;
+  }
+  .section-two-desktop .section-two-images h5 {
+    margin-top: -90px;
+    margin-left: 20px;
+    background-color: var(--Very-Dark-Gray);
+    color: var(--White);
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 1.5rem;
+    width: 50%;
+  }
+  .section-two-desktop .section-two-images .spacing {
+    margin-top: 40px;
+  }
+
+  .footer {
+    background-color: var(--Black);
+    color: var(--White);
+    margin-top: 100px;
+  }
+  .footer .first-col {
+    margin-left: 150px;
+  }
+  .footer .first-col h1 {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: left;
+    font-family: Alata;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  .footer .first-col ul li {
+    display: inline;
+    text-align: left;
+    margin-bottom: 15px;
+    font-family: Alata;
+    margin-right: 30px;
+  }
+  .footer .first-col ul li:hover {
+    background-color: var(--Dark-Gray);
+  }
+  .footer .second-col .social {
+    text-align: end;
+    margin-top: 60px;
+  }
+  .footer .second-col .social img {
+    margin-right: 10px;
+  }
+  .footer .second-col .social img:hover {
+    background-color: var(--Very-Dark-Gray);
+  }
+  .footer .second-col h5 {
+    margin-top: 40px;
+    padding-bottom: 60px;
+    font-family: var(--font-family);
+    text-align: end;
+    color: var(--Dark-Gray);
+    font-size: 1rem;
+  }
+}
